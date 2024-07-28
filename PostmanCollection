@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "38a454d4-f1a9-4bfb-9da7-799ca3a6e108",
+		"name": "AppNationCase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3074074"
+	},
+	"item": [
+		{
+			"name": "CreateContent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"test content creation\",\r\n    \"body\":\"test content creation\",\r\n    \"description\": \"test content creation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content"
+					]
+				},
+				"description": "Creates content"
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle Favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content/0J91TVUHI1Xz4jwxtupi/togglefavorite",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content",
+						"0J91TVUHI1Xz4jwxtupi",
+						"togglefavorite"
+					]
+				},
+				"description": "Toggles favorite content with content id"
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle Like",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"contentId\":\"FJGrPBnr0x3ZJmE5NfKs\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content/0J91TVUHI1Xz4jwxtupi/togglelike",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content",
+						"0J91TVUHI1Xz4jwxtupi",
+						"togglelike"
+					]
+				},
+				"description": "Likes or dislikes content with content id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Favorited contents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/contents/favorited",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"contents",
+						"favorited"
+					]
+				},
+				"description": "Gets favorited contents"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Liked contents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/contents/liked",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"contents",
+						"liked"
+					]
+				},
+				"description": "Gets liked contents"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Content list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/contents",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"contents"
+					]
+				},
+				"description": "Gets all contents with like counts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Content By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBjYjQyNzQyYWU1OGY0ZGE0NjdiY2RhZWE0Yjk1YTI5ZmJhMGM1ZjkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidWx2aTIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYXBwbmF0aW9uY2FzZSIsImF1ZCI6ImFwcG5hdGlvbmNhc2UiLCJhdXRoX3RpbWUiOjE3MjIxNjU2OTAsInVzZXJfaWQiOiJDRUNJVDJ2bUdOZ0k3MTBxTWRVZ29hOUdHMzIzIiwic3ViIjoiQ0VDSVQydm1HTmdJNzEwcU1kVWdvYTlHRzMyMyIsImlhdCI6MTcyMjE2NTY5MCwiZXhwIjoxNzIyMTY5MjkwLCJlbWFpbCI6InVsdmkyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ1bHZpMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.o0bOtmdcnXEcjH7_cBwuVx_ExqsQ_U9PZY9iJblxiuaxV2k_cQJqTqiv7jyDEYgB0_oj1cjzVJsp0It4iSDCXULc6eECquGYpaYqA8s_k2NsAGERyEKuA0i8isDSvjwTwr21P-ilVwXg-3tzVJMfqbBYt7Zep8_-IWvz6_Cu6l-kzsVMa24pDRRBk4O90Eg_-Hm6yyrN1nAEwlgXFUCaw3Y5ByayDEsUIYOkE98Z7YvhpV_HBNpRBYZ_mPWuPITZ1lCH4G4vGGrs9oNNO-jgObMBBhyY9qgD7l1QpgxUMAEOtn7JH4RQBTajg4bFblP5Xs7ja0UK2KguQGYEn3VR8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content/0J91TVUHI1Xz4jwxtupi",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content",
+						"0J91TVUHI1Xz4jwxtupi"
+					]
+				},
+				"description": "Gets content by content id"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Content",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content/J2LmBbhhq9Zyjl6JFA71",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content",
+						"J2LmBbhhq9Zyjl6JFA71"
+					]
+				},
+				"description": "Deletes Content"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Content",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"updatedcontent\",\r\n    \"body\": \"updatedcontent\",\r\n    \"description\": \"updatedcontent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/content/0J91TVUHI1Xz4jwxtupi",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"content",
+						"0J91TVUHI1Xz4jwxtupi"
+					]
+				},
+				"description": "Updates content with contentId and fields"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"ulvi2\",\r\n    \"email\": \"ulvi2@gmail.com\"\r\n    ,\"password\" : \"Asdzxc1122\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/account",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"account"
+					]
+				},
+				"description": "Register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ulvi2@gmail.com\"\r\n    ,\"password\" : \"Asdzxc1122\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/account/login",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"account",
+						"login"
+					]
+				},
+				"description": "Login with email and password"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ulvi@gmail.com\"\r\n    ,\"password\" : \"Asdzxc2211\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-pqgbml4oma-ey.a.run.app/account/login",
+					"protocol": "https",
+					"host": [
+						"backend-pqgbml4oma-ey",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"account",
+						"login"
+					]
+				},
+				"description": "Updates current user password"
+			},
+			"response": []
+		}
+	]
+}

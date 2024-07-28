@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111827; /* Slightly darker background for the navbar */
+  padding: 10px 20px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Increased gap for more separation */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #9CA3AF; /* Slightly different color for the links */
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 15px; /* Add some padding for better click area */
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  text-decoration: none; /* No underline on hover */
+  background-color: #1F2937; /* Slightly lighter background on hover */
+  color: white;
+}
