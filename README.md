@@ -1,4 +1,4 @@
-##Full Stack Case Study
+**Full Stack Case Study**
 
 BackendURL: https://backend-pqgbml4oma-ey.a.run.app
 
